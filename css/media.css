@@ -1,0 +1,186 @@
+@media (max-width: 1024px) {
+    .promo {
+        height: 600px;
+    }
+    .promo_item:first-child {
+        align-items: flex-end;
+        margin-bottom: 90px;
+    }
+    .promo_item:last-child {
+        background-size: contain;
+        background-position-y: 90px;
+    }
+    .promo .price {
+        height: 100px;
+        width: 100px;
+        left: 15%;
+    }
+    .popular_menu_wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .popular_menu_item:first-child {
+        grid-row-end: 1;
+    }
+    .events_slider .events_slider_nav {
+        bottom: 30px;
+    }
+    .booking .container {
+        background: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        height: 500px;
+    }
+    .promo_item:first-child {
+        margin-bottom: 40px;
+    }
+    .promo .price {
+        width: 50px;
+        height: 50px;
+        line-height: 36px;
+    }
+    .promo .price .price_value {
+        font-size: 32px;
+    }
+    .promo .price .price_cent {
+        font-size: 22px;
+        margin-bottom: -5px;
+    }
+    .promo .price .price_caption {
+        letter-spacing: 5px;
+    }
+    .nav .nav_toggle {
+        display: inline-block;
+        background-color: transparent;
+        border: 0;
+        color: #3d2514;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border-bottom: 2px dashed #3d2514;
+        cursor: pointer;
+    }
+    .nav ul {
+        display: none;
+    }
+    .header_logo img {
+        width: 250px;
+    }
+    .header_navigation {
+        display: flex;
+    }
+    .header_navigation .contacts {
+        margin-left: 30px;
+        padding-left: 50px;
+        margin-bottom: 0;
+    }
+    .header_navigation .nav {
+        order: -1;
+    }
+    .menu .menu_wrapper {
+        flex-wrap: wrap;
+    }
+    .menu .menu_item {
+        width: calc(50% - 30px);
+        flex: none;
+    }
+    .menu .menu_item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .events_slider_item {
+        flex-direction: column;
+    }
+    .events_slider_item > div {
+        width: 100%;
+    }
+    .events_slider_item .slide_thumbnail {
+        order: -1;
+    }
+    .events_slider_item .slide_content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .events_slider .events_slider_nav {
+        left: 30px;
+    }
+    .booking .booking_form {
+        width: 90%;
+    }
+    .footer_wrapper,
+    .footer_top,
+    .footer_bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer_top_item:first-child {
+        margin-bottom: 30px;
+    }
+    .footer_bottom {
+        margin-top: 30px;
+    }
+    .footer_bottom .footer_bottom_item:nth-child(2) {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 425px) {
+    .header_wrapper {
+        flex-direction: column;
+    }
+    .header_navigation {
+        flex-direction: column;
+    }
+    .header_navigation .contacts {
+        margin-left: 0;
+        padding-left: 0;
+        background: none;
+    }
+    .header_navigation .nav {
+        order: 0;
+    }
+    .promo .promo_item:first-child {
+        width: 100%;
+    }
+    .promo .promo_item:last-child {
+        display: none;
+    }
+    .popular_menu {
+        padding: 40px 0 40px 0;
+    }
+    .menu {
+        margin-bottom: 50px;
+    }
+    .menu h2 {
+        line-height: 60px;
+    }
+    .menu h2 span {
+        margin-bottom: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menu_wrapper {
+        margin-top: 40px;
+    }
+    .menu .menu_item {
+        width: 100%;
+        margin-right: 0;
+    }
+    .booking {
+        margin-top: 0;
+        padding-bottom: 50px;
+    }
+    .booking .booking_form {
+        grid-template-columns: 1fr;
+    }
+    .footer_top .footer_logo {
+        margin-top: 0;
+    }
+    .footer .footer_top img {
+        width: 70%;
+    }
+}

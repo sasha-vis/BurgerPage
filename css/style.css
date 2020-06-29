@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header-promo {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+
+    padding-top: 50px;
+}
+
+.header_navigation {
+    margin-left: auto;
+    text-align: right;
+}
+
+.header_navigation .contacts {
+    color: #3d2514;
+    font-size: 16px;
+
+    background-image: url(../images/Vector\ Smart\ Object.png);
+
+    background-repeat: no-repeat;
+    padding-left: 80px;
+
+    min-height: 33px;
+
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.nav .nav_toggle {
+    display: none;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav a {
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.promo {
+    height: 800px;
+
+    background-image: url(../images/Rectangle.png);
+    background-size: cover;
+}
+
+.promo_wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.promo .container {
+    height: 100%;
+}
+
+.promo_item:first-child {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.promo_item:last-child {
+    width: 60%;
+    background-image: url(../images/Imagee.png);
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: relative;
+
+}
+
+.promo_content {
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+    font-weight: bold;
+}
+
+.promo_content .slogan {
+    padding: 10px 20px;
+    border: 2px dashed #3d2514;
+    margin-bottom: 20px;
+}
+
+.promo_content .title {
+    font-size: 120px;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 0 #fee8bc;
+}
+
+.promo_content .subtitle {
+    font-size: 60px;
+    line-height: 1;
+    text-shadow: 5px 5px 0 #fee8bc;
+}
+
+.promo .price {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background-color: #bf2222;
+    border: 2px dashed #f4dbdb;
+    box-shadow: 0 0 0 10px #bf2222;
+
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 36px;
+    line-height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    padding: 30px;
+
+    position: absolute;
+    bottom: 10%;
+}
+
+.price .price_value {
+    font-size: 70px;
+}
+
+.price .price_cent {
+    margin-bottom: -20px;
+}
+
+.price .price_caption {
+    letter-spacing: 12px;
+    padding-left: 12px;
+}
+
+.popular_menu {
+    padding: 80px;
+}
+
+.popular_menu_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 190px 190px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+.popular_menu_item {
+    border-radius: 10px;
+    
+    background-position: right center;
+    background-size: cover;
+    padding: 33px 23px;
+}
+
+.popular_menu_item a {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    text-decoration: none;
+    line-height: 35px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.popular_menu_item a .subname {
+    font-size: 25px;
+}
+
+.popular_menu_item a .name {
+    font-size: 42px;
+}
+
+.popular_menu_item:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.popular_menu_item:nth-child(1) {
+    background-image: url(../images/BurgerImage2.png);
+}
+
+.popular_menu_item:nth-child(2) {
+    background-image: url(../images/image.png);
+}
+
+.popular_menu_item:nth-child(3) {
+    background-image: url(../images/image2.png);
+}
+
+.menu {
+    margin-bottom: 130px;
+}
+
+.menu h2 {
+    text-align: center;
+    color: #3d2514;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 72px;
+    margin-bottom: 40px;
+}
+
+.menu h2 span {
+    display: inline-block;
+    font-size: 25px;
+    background-color: #ffc045;
+    padding: 20px 25px;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 40px;
+}
+
+.menu p {
+    text-align: center;
+    line-height: 32px;
+}
+
+.menu_wrapper {
+    display: flex;
+    margin-top: 70px;
+    align-items: flex-end;
+}
+
+.menu_item {
+    flex: 1 1;
+    text-align: center;
+}
+
+.menu_item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.thumbnail {
+    width: 80%;
+    transform: scale(1);
+    transition: 0.5s ease;
+}
+
+.menu_item:hover > a .thumbnail {
+    transform: scale(1.1);
+}
+
+.menu_item .name {
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.menu_item .name a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 38px;
+    color: #3d2514;
+    text-decoration: none;
+}
+
+.menu_item p {
+    color: #3d2514;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.menu_item .button_order {
+    background-color: #bf2222;
+    border: 0;
+    font-size: 28px;
+    color: #fff;
+    padding: 15px 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+
+    margin-top: 40px;
+}
+
+.events_slider {
+    position: relative;
+}
+
+.events_slider_item {
+    display: flex;
+    padding: 30px;
+    box-shadow: 10px 10px 40px #ddd;
+}
+
+.events_slider_item > div {
+    width: 50%;
+}
+
+.events_slider_item .slide_content {
+    padding: 30px;
+}
+
+.events_slider_item .slide_content h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.events_slider_item .slide_content span {
+    font-size: 30px;
+    color: #808080;
+    font-weight: normal;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.events_slider_item .slide_content a {
+    text-decoration: none;
+    color: #3d2514;
+}
+
+.events_slider_item .slide_content p {
+    color: #505050;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.events_slider_item .slide_thumbnail {
+    display: flex;
+    align-items: center;
+}
+
+.events_slider_item .slide_thumbnail img {
+    width: 100%;
+}
+
+.events_slider .events_slider_nav {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+}
+
+.events_slider .events_slider_nav ul {
+    display: flex;
+}
+
+.events_slider .events_slider_nav li {
+    width: 18px;
+    height: 18px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    list-style: none;
+}
+
+.events_slider .events_slider_nav li:hover {
+    background-color: #ffc045;
+    cursor: pointer;
+}
+
+.events_slider .events_slider_nav .active {
+    background-color: #ffc045;
+}
+
+.events_slider .events_slider_nav li:not(:last-child) {
+    margin-right: 8px;
+}
+
+.booking {
+    text-align: center;
+    margin-top: 130px;
+    padding: 80px 0 100px 0;
+    background: url(../images/food.png) right bottom / auto 420px no-repeat,
+                url(../images/Burger3.png) top left no-repeat;
+}
+
+.booking .container {
+    background: url(../images/bottle.png) 50px 130px no-repeat;
+}
+
+.booking h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+    font-size: 50px;
+    margin-bottom: 95px;
+}
+
+.booking span {
+    font-size: 30px;
+    font-weight: normal;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.booking_form {
+    width: 60%;
+    display: grid;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.booking_form input,
+.booking_form button {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.booking_form input {
+    font-size: 22px;
+    color: #3d3d3d;
+    padding: 25px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+}
+
+.booking_form button {
+    background-color: #bf2222;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.footer_wrapper {
+    background-image: url(../images/footer.png);
+    background-size: cover;
+    color: #fff;
+    padding: 30px 45px;
+}
+
+.footer_top {
+    display: flex;
+}
+
+.footer_top .footer_top_item {
+    flex: 1 1;
+}
+
+.footer_top .footer_top_item:nth-child(2) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer_top .footer_logo {
+    margin-top: 70px;
+    margin-bottom: 45px;
+}
+
+.footer_top_item p {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.footer_top_item .footer_contacts {
+    font-size: 20px;
+}
+
+.footer_top_item .footer_contacts li {
+    font-family: 'Bebas Neue', cursive;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer_top_item .footer_contacts li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.footer_top_item .footer_contacts li:nth-child(1) {
+    background-image: url(../images/Location\ Icon.png);
+    background-repeat: no-repeat;
+    height: 35px;
+    padding-left: 60px;
+}
+
+.footer_top_item .footer_contacts li:nth-child(2) {
+    background-image: url(../images/Email.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    padding-left: 58px;
+}
+
+.footer_bottom {
+    display: flex;
+    padding-top: 30px;
+    margin-top: 120px;
+}
+
+.footer_bottom .footer_bottom_item {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+}
+
+.footer_bottom .footer_bottom_item:nth-child(2) {
+    margin-left: auto;
+}
+
+.footer_bottom .footer_socials {
+    display: flex;
+}
+
+.footer_bottom .footer_socials li {
+    list-style: none;
+}
+
+.footer_bottom .footer_socials li:not(:last-child) {
+    margin-right: 12px;
+}
+
+.footer_bottom .footer_socials li a {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+}
+
+.footer_bottom .footer_socials li:nth-child(1) a {
+    background-image: url(../images/Instagram.png);
+}
+
+.footer_bottom .footer_socials li:nth-child(2) a {
+    background-image: url(../images/Facebook.png);
+}
+
+.footer_bottom .footer_socials li:nth-child(3) a {
+    background-image: url(../images/Twitter.png);
+}
+
+.footer_bottom .footer_socials li:nth-child(4) a {
+    background-image: url(../images/WhatsApp.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-family: 'Bebas Neue', cursive;
+
+font-family: 'Montserrat', sans-serif;
